@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <form class="formulario" action="formulario" method="post">
+        <ul>
+            <li>
+              <label for="nombre">Nombre:</label><br>
+              <input id="nombre" type="text" id="nombre" name="usuario">
+            </li>
+            <li>
+              <label for="mail">Email:</label><br>
+              <input id="email" type="email" id="mail" name="e-mail">
+            </li>
+            <li>
+                <label for="Edad">Edad:</label><br>
+                <input id="edad" type="text" id="edad" name="Edad">
+            </li>
+            <br>
+           <li>
+            <label for="eleccion">Qué opción te describe mejor</label>
+            <br>
+            <select id="eleccion" name="conducta">
+                <option>Malo</option>
+                <option>Bueno</option>
+                <option>Antipatico</option>
+                <option>Enfadado</option>
+              </select>
+            </li>
+            <br>
+            <li>
+                <label for="radiobutton">¿Recomendarías GeeksforGeeks a un amigo?</label><br>
+                <input id="radio" type="radio" name="recomendarias" value="1">Yes
+                <input id="radio" type="radio" name="recomendarias" value="2">No
+                <input id="radio" type="radio" name="recomendarias" value="3">Maybe
+                <br>
+            </li>
+            <br>
+            <li>
+                <label for="radiobutton">lenguajes y marcos de trabajo (marque todos los que correspondan)</label><br>
+                <input id="checkbox" type="checkbox" name="lenguajes" value="1">C
+                <input id="checkbox" type="checkbox" name="lenguajes" value="2">C++
+                <input id="checkbox" type="checkbox" name="lenguajes" value="3">C#
+                <input id="checkbox" type="checkbox" name="lenguajes" value="1">Java
+                <input id="checkbox" type="checkbox" name="lenguajes" value="2">Python
+                <input id="checkbox" type="checkbox" name="lenguajes" value="3">JavaScript
+                <input id="checkbox" type="checkbox" name="lenguajes" value="1">React
+                <input id="checkbox" type="checkbox" name="lenguajes" value="2">Angular
+                <input id="checkbox" type="checkbox" name="lenguajes" value="3">Django
+                <input id="checkbox" type="checkbox" name="lenguajes" value="3">Spring
+            </li>
+            <br>
+            <li>
+                <label for="msg">Comentarios o Sugerencias</label>
+                <br>
+                <textarea id="sugerencias" id="msg" name="user_message"></textarea>
+              </li>
+            <br>
+            <li>
+                <button class="btn-form-submit" type="submit">Envíe su mensaje</button>
+            </li>
+              
+           </ul>
+    </form>
+    <script src=".js/datos.js"></script>
+</body>
+</html>
